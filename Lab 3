@@ -1,0 +1,75 @@
+*/
+//Arithmetic sequence- Task 1 Lab 3
+/*
+int main () {
+int x1=0, x2=2, d, xn, xnm1=x2, count=0;
+d = x2-x1;
+while(count<=10){
+  xn=xnm1+d;
+  printf("%d %d\n", count, xn);
+  xnm1=xn;
+  xn++;
+  count++;
+  }
+return 0;
+}
+
+
+//Task 2: Arthimetic Series LAB 3
+int main () {
+int x1=0, x2=2, d, xn, xnm1=x2, count=0, sum=0;
+d = x2-x1;
+while(count<=10){
+  xn=xnm1+d;
+sum = xn++; //not sure if correct way to sum the series or if written correctly
+  printf("%d %d\n", count, sum);
+  xnm1=xn;
+  xn++;
+  count++;
+
+  }
+return 0;
+}
+
+
+//Task 3 Lab 3: Geometric sequence
+
+int main ()
+{
+  float k, xn, x0=1, x1=2, xnm1=x1;
+  int count=0;
+  k=x1/x0;
+  while(count<=10)
+  {
+      xn=k*xnm1;
+      printf("%d %f\n", count, xn);
+      xnm1=xn;
+      xn++;
+      count++;
+
+  }
+
+ return 0;
+}
+
+
+//Task 4 Lab 3:Geometric Series Pt1
+
+int main ()
+{
+    float k, xn, x0=1, x1=2, xnm1=x1;
+  int count=0;
+  int sum;
+  k=x1/x0;
+  while(count<=10)
+  {
+      xn=k*xnm1;
+      xnm1=xn; //xnm1 becomes the previous value of xn on each 'loop/completion og the eqn'
+      xn++; //xn increases
+      count++;
+
+  }
+
+    return 0;
+}
+*/
