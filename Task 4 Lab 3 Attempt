@@ -1,0 +1,25 @@
+//Task 4 Lab 3:Geometric Series Pt1
+
+int main ()
+{
+    float k, xn, x0=1, x1=2, xnm1=x1;
+  int count=0;
+  int sum=0;
+  k=x1/x0;
+  printf("x0= %.2f, x1= %2f\n", x0, x1);
+  //printing intial values upto 2 decimal places and then calculating the sum
+
+  while(count<=10)
+  {
+
+      xn=k*xnm1;
+      xnm1=xn; //xnm1 becomes the previous value of xn on each 'loop/completion og the eqn'
+      xn++; //xn increases
+      count++;
+      sum=xn;
+      printf("sum: %f\n", sum);
+
+  }
+
+    return 0;
+}
