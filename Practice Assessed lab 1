@@ -109,3 +109,35 @@ int main ()
 
     return 0;
 }
+
+//Correct code for the pass/credit level question
+
+int main()
+{
+    float x0=0.65;
+    float xn;
+    float xnml=0.65;
+    int n=1;
+
+    printf("%d %.6f\n", n, x0);
+
+    xn=x0;
+
+    while(n<10)// removed this from inside the bracket (&& xn-xnml<0.001)
+    {
+
+        xn=(0.2*xnml)+5;
+        printf("%d %.6f\n", n, xn);
+
+        if((xn-xnml)<0.001)
+        {
+            break;
+        }
+        xnml=xn;
+        xn++;
+        n++;
+
+    }
+
+    return 0;
+}
