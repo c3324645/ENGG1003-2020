@@ -24,3 +24,31 @@ int main()
 
     return 0;
 }
+
+//Task 2: D/HD level --> this code is worth 4/5 marks therefore a distiction
+int main ()
+{
+    double x0=1.47, x1=0.14, xn=0, xnm1=x1, xnm2=x0; //could probably just be a float but playing it safe by making the data type bigger
+    int n=0; //this is our 'count' will show what iteration we are up to
+
+    printf("%d %f\n", n, x0);
+    n++;
+    printf("%d %f\n", n, x1);
+    n++; //making sure the count increases here so that the output shows 1 0.14 and making sure that the while loop will start at 2
+//how do i make this 'printing x0&x1 more simple -> can i make in in one print statement? rather than doing it seperately
+
+    while(n<=10 || xn>1*10e10) //|| is the symbol for 'OR' and && is the symbol for 'AND'
+    {
+        xn=0.8*xnm1-0.2*xnm2;
+
+        printf("%d %f\n", n, xn);
+        xnm2=xnm1;
+        xnm1=xn;
+        xn++;
+        n++;
+    }
+
+
+    return 0;
+}
+
