@@ -141,3 +141,48 @@ int main()
 
     return 0;
 }
+
+
+//correct code for D/HD Task
+int main ()
+{
+    double x0=1.47, x1=0.14, xn=0, xnm1=x1, xnm2=x0; //could probably just be a float but playing it safe by making the data type bigger
+    int n=0; //this is our 'count' will show what iteration we are up to
+
+    printf("%d %f\n", n, x0);
+    n++;
+    printf("%d %f\n", n, x1);
+    n++; //making sure the count increases here so that the output shows 1 0.14 and making sure that the while loop will start at 2
+//how do i make this 'printing x0&x1 more simple -> can i make in in one print statement? rather than doing it seperately
+double dxn=0; //intialising new variable --> dxn represents the first derivative of the eqn above
+   char posflag=0;
+   char negflag=0;
+
+   dxn=x0-x1;
+        if(dxn<0) negflag=1;
+        else posflag=1;
+
+    while(n<=10 && xn<=1*10e10)
+    {
+        xn=0.8*xnm1-0.2*xnm2;
+
+        printf("%d %f\n", n, xn);
+
+        dxn=xn-xnm1;
+        if(dxn<0) negflag=1;
+        else posflag=1;
+
+        xnm2=xnm1;
+        xnm1=xn;
+        n++;
+
+    }
+
+    if(posflag && negflag)printf("\nThe sign of dx/dn varies. \n");
+    else if(posflag)printf("\nThe sign of dx/dn is always positive or zero. \n");
+    else if(negflag)printf("\nThe sign of dx/dn is always negative. \n");
+
+    return 0;
+}
+
+
