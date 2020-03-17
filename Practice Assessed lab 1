@@ -275,3 +275,33 @@ printf("%f\n", bnmax);
 
     return 0;
 }
+
+//full marks on HD question
+int main()
+{
+    float  A=2.8, B=0, C=0, Bmax=0;
+    int n=0;
+
+    printf("%d %f %f %f\n", n, A, B, C);
+
+
+    while(n<=8)
+    {
+         C=C+0.1*B;
+         B=0.9*B+0.3*A;
+         A=0.7*A;
+
+         n++;
+         printf("%d %f %f %f\n", n, A, B, C);
+
+         if(n==1)Bmax=B;
+         else if(B>Bmax){
+            Bmax=B;
+
+         }
+    }
+
+printf("%f\n", Bmax);
+
+    return 0;
+}
