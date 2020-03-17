@@ -185,4 +185,21 @@ double dxn=0; //intialising new variable --> dxn represents the first derivative
     return 0;
 }
 
+//assessment task examples: Easy(ish) assessment task from wk3 lecture 2 -> xn=3xnm1+2xn2, x1=3, x2=1, exit at x8 or xn>100
+int main()
+{
+    float xn, xnm1=1, xnm2=3;
+    int n=3; //the first unknown is x for n=3
 
+    printf("1 %f\n", xnm2); //x1 and x2 are given so just hardcode n
+    printf("2 %f\n", xnm1);
+
+    while((n<=8) && (xn<100))
+    {
+        xn=3.0*xnm1+2*xnm2;
+        printf("%d %f\n", n, xn);
+        xnm2=xnm1;
+        xnm1=xn;
+        n++;
+    }
+    return 0;
