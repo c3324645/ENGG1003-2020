@@ -240,3 +240,38 @@ int main()
 
     return 0;
 }
+
+//4.5 marks out of 5 on hard assessment task
+int main()
+{
+    float a0=2.8, b0=0, c0=0, an, bn, cn, anm1=a0, bnm1=b0, cnm1=c0, bnmax=0;
+    int n=0;
+
+    printf("%d %f %f %f\n", n, a0, b0, c0);
+
+
+
+
+    while(n<=8)
+    {
+         an=0.7*anm1;
+         bn=0.9*bnm1+0.3*anm1;
+         cn=cnm1+0.1*bnm1;
+         anm1=an;
+         bnm1=bn;
+         cnm1=cn;
+         n++;
+         printf("%d %f %f %f\n", n, an, bn, cn);
+
+         if(n==1)bnmax=bn;
+         else if(bn>bnmax){
+            bnmax=bn;
+
+         }
+
+    }
+
+printf("%f\n", bnmax);
+
+    return 0;
+}
