@@ -215,3 +215,28 @@ int main()
     //example during lecture was not completed
     return 0;
 }
+
+//Task 5 wk3 lab: Geometric series pt 2 //not finished unsure how to continue
+
+int main()
+{
+    int n=0;
+    float s, x1=3, x0=1, xn=x1, xnm1=x0, k;
+
+    printf("%d %f\n", n, x0);
+    n++;
+    printf("%d %f\n", n, x1);
+ k=xn/xnm1;
+    while(n<=9)
+    {
+
+        xn=k*xnm1;
+        xnm1=xn;
+        n++;
+        printf("%d %f\n", n, xn);
+        
+
+    }
+
+    return 0;
+}
