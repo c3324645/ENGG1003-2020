@@ -203,3 +203,15 @@ int main()
         n++;
     }
     return 0;
+
+//Hard assessment task example: wk3 lecture 2 -> xn=0.6xnm1+0.2ynm1, yn=0.1xnm1+0.9ynm1, x0=5, y0=0
+int main()
+{
+    float xn, yn, xnm1, ynm1;
+    
+    xn=0.6*xnm1+0.2*ynm1;
+    yn=0.1*xnm1+0.9*ynm1; //can use variable optimisation here by changing ynm1 to yn becuase the value doesnt change from the eqn above
+    
+    //example during lecture was not completed
+    return 0;
+}
