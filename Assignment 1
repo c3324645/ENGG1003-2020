@@ -35,3 +35,67 @@ int main()
     printf("%s\n",plainTextToCipherText(plainText,n)); 
  return 0;
 }
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+/*
+void railFence(char *message, char *cipherText, int length, int A);
+{
+    char array [N]
+}
+
+int main() {
+	char output[1024];
+	railFence("this is a test message", output, 0, 4);
+	printf("%s\n", output);
+}
+
+void railFence(char *message, char *cipherText, int length, int A) {
+	char grid[strlen(message)][A];
+	int rail, i = 0, j = 0;
+
+}
+*/
+void railFence(char *message, char *cipherText, int length, int A);
+void railFence2(char *message, char *cipherText, int length, int A, int B, int dir);
+int input(); //function prototype for a function that reads the user's input and returns that value
+int main()
+{
+    int choice; // Declaration of choice as a variable to enable the switch function to work
+    printf("Select 1 to encrypt a rail cipher\n"); //user driven menu; all options will be displayed and the user will be asked to input their choice
+    printf("Select 2 to encrypt a 2-level rail cipher\n");
+    printf("Select 3 to decrypt a 2-level rail cipher\n");
+    printf("Enter your choice: \n");
+    choice=input(); //input() function is called and the user input is assigned to 'choice'
+
+    switch (choice)
+    {
+    case 1:
+        {
+            //insert code to encrypt a RF cipher
+            break;
+        }
+    case 2:
+        {
+            //insert code to encrypt a 2-level RFcipher
+            break;
+        }
+    default:
+        printf("Wrong input\n");
+    }
+
+
+    return 0;
+}
+
+//function defintions?
+int input() // input() function when called reads the user's input and stores that in 'number', value is then returned to the point where it is called
+{
+    int number;
+    scanf("%d", &number);
+    return (number);
+}
+
