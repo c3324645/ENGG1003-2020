@@ -99,3 +99,54 @@ int input() // input() function when called reads the user's input and stores th
     return (number);
 }
 
+//int length, a, i, j;
+    //char *message, *cipherText;
+    //length=strlen(*cipherText);
+
+    //char grid[strlen(message)][A];
+	//int rail, i = 0, j = 0;
+	/*int rail, i=0, j=0;
+	char result;
+	char grid[A][strlen(message)]; //Setting up the grid to insert plain text to be encrypted
+	for (int i=0; i<A; i++) //filling in the matrix with our message, distiguishes filled spaces from empty spaces
+        for (int j=0; j<strlen(message); j++)
+        rail[i][j]=*cipherText; //this should either be rail or grid {not sure yet}
+
+    for(int i=0; i<A; i++)
+        for (int j=0; j<strlen(message); j++)
+    if(rail[i][j]!=*cipherText)
+        result=(rail[i][j]);
+    return result;
+    */
+     /*while(j<length)
+    {
+        if(length%2==0)
+        {
+            for(i=0;i<rail;i++)
+            {
+                grid[i][j]=(int)cipherText[j];
+                j++;
+            }
+        }
+        else
+        {
+            for(i=rail-2;i>0;i--)
+            {
+                grid[i][j]=(int)cipherText[j];
+                j++;
+            }
+        }
+    }
+
+      for(i=0;i<rail;i++)
+      {
+          for(j=0;j<length;j++)
+          {
+              if(grid[i][j]!=0)
+                printf("%c", grid[i][j]);
+          }
+      }
+    printf("\n");
+    return cipherText;
+*/
+
